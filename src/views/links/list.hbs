@@ -1,0 +1,31 @@
+
+ <div  class="container">    
+        <a href="/links/add" class="btn btn-outline-primary mt-4"><i class='bx bxs-plus-circle bx-md'></i></a>    
+      <table class="table table-bordered table-striped text-center mt-4 table-dark">
+        <thead>
+          <tr class="bg-secondary text-white">
+            <th scope="col">ID</th>
+            <th scope="col">PARENT</th>
+            <th scope="col">DESCRIPTION</th>            
+            <th scope="col">IDEMPRESA</th>  
+            <th scope="col">ACTIONS</th>           
+          </tr>
+        </thead>
+        <tbody>
+          {{!-- <% results.forEach((user)=>{ %> --}}
+          {{#each links}}
+            <tr>  
+                <td>{{id}}</td>  
+                <td>{{parent}}</td>
+                <td>{{description}}</td>
+                <td>{{idempresa}}</td>
+                <td>
+                  <a href="/links/edit/{{id}}" class="btn btn-outline-info"><i class='bx bxs-edit'></i></a>
+                  <a href="/links/delete/{{id}}" class="btn btn-outline-danger"><i class='bx bxs-trash-alt'></i></a>                   
+                </td>
+            </tr> 
+          {{/each}}                                  
+         {{!-- <% }) %> --}}
+        </tbody>
+      </table>
+      </div>

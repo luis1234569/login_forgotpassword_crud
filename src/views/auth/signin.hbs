@@ -1,0 +1,37 @@
+<div class="container p-4">
+  <div class="row">
+
+    <div class="col-md-4 mx-auto">
+      <div class="card text-center">
+        <div class="card-header">
+          <h3>INICIAR SESION</h3>
+        </div>
+        <img src="/img/logo2.png" alt="Logo Fazt" class="card-img-top mx-auto m-2 rounded-circle w-50">
+        <div class="card-body">
+          <form action="/signin" method="POST">
+            <div class="form-group">
+              <label for="login" class="form-label">Empresa</label>
+                            <select type="text" class="form-control" {{!-- id="empresa" name="empresa" --}}>
+                                <option value="null"></option>
+                                <option value="elhost_empresa">Buterbart</option>
+                                <option value="elhost_empresa">Hellesike</option>
+                                <option value="elhost_empresa">Bershka</option>
+                                <option value="elhost_empresa">Laus</option>
+                            </select>
+            </div>
+            <div class="form-group">
+              <input type="text" name="login" placeholder="Username" class="form-control" autofocus>
+            </div>
+            <div class="form-group">
+              <input type="password" name="pswd" placeholder="Password" class="form-control">
+            </div>
+            <button class="btn btn-primary btn-block">
+              SingIn
+            </button>
+          </form>
+          <a href="/password" class="text-primary">¿Olvidaste tu contraseña?</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
